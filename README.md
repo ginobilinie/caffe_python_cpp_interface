@@ -6,6 +6,7 @@ I suppose you have installed:    <br>
      <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numpy
  
 
+
 1. trainCaffewithPython.py: train the network with pycaffe interface step by step.
 
 I will update this reporitory.
