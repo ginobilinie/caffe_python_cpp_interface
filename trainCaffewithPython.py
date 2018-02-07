@@ -94,8 +94,8 @@ def main():
         solver.step(1) #otherwise, you have to use solver.solve which optimize till the end
         
         if i%showLossEvery==0:
-            netloss = [solver.net.blobs['lossX'].data,solver.net.blobs['lossY'].data,solver.net.blobs['lossF'].data]
-            print 'Network Loss for Network  1, iteration  %d  is  Seg  %f, Cur  %f, Final  %f' % ( i, netloss[0], netloss[1], netloss[2])
+            netLoss = [solver.net.blobs['lossReg2'].data,solver.net.blobs['lossReg1'].data,solver.net.blobs['lossSeg'].data]
+            print 'Network Loss for Network 1, iteration  %d  is  Seg  %f, Reg1  %f, Reg2  %f' % ( i, netLoss[2], netLoss[0], netLoss[1])
         if i%saveModelEvery==0:
             
             print 'Saving cold started model for iteration: %d' % currIter
