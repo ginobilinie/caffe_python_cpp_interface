@@ -59,7 +59,7 @@ def ModifySolverPrototxt(currPath, trainIter, currIter, desiredLR, saveModelEver
     solver.type = 'SGD'  # optimization method
     solver.solver_mode = caffe_pb2.SolverParameter.GPU
     with open(solver_file, 'w') as f:
-        f.write(str(s))
+        f.write(str(solver))
 
 
 
